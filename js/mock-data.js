@@ -54,4 +54,5 @@ const mocks = function getMockPhotos(){
   }
   return photoElements;
 };
+
 export {mocks};
