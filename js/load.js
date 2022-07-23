@@ -1,6 +1,5 @@
 const errorLoadTemplate = document.querySelector('#js-error--load').content.querySelector('.error');
 const errorLoad = errorLoadTemplate.cloneNode(true);
-
 function erroView(){
   document.body.append(errorLoad);
 }

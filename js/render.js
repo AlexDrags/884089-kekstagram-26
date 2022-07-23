@@ -12,6 +12,7 @@ const bigPictureDescription = bigPicture.querySelector('.social__caption');
 const bigPictureCommentsCount = bigPicture.querySelector('.comments-count');
 const bigPictureCurrentCommentsCount = bigPicture.querySelector('.js-comments-current-count');
 const bigPictureCommentsLoader = bigPicture.querySelector('.comments-loader');
+const imgFilters = document.querySelector('.img-filters');
 const COMMENTS_PER_PAGE = 5;
 let counterShowedComments = COMMENTS_PER_PAGE;
 
@@ -53,6 +54,7 @@ export function renderPictures(mocksArr){
     };
     pictureData.addEventListener('click', onPicturesClick);
     pictures.append(pictureData);
+    imgFilters.classList.remove('img-filters--inactive');
   }
   return pictures;
 }
